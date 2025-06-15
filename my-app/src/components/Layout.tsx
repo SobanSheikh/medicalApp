@@ -24,7 +24,7 @@ const Layout = () => {
   return (
     <div
       id="layout-container" // <- Add this ID
-      className="flex flex-col bg-[#e2dbcc] pt-4 pb-4 min-h-screen overflow-y-auto w-full"
+      className="flex flex-col bg-[#e2dbcc] pt-4  min-h-screen overflow-y-auto w-full"
     >
       <ScrollToTop />
       <Navbar />

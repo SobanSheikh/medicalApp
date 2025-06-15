@@ -8,30 +8,30 @@ import aboutDecoration4 from "../assets/about_decoration_4.png";
 import aboutDecoration5 from "../assets/about_decoration_5.png";
 const About: React.FC = () => {
   return (
-    <div className="flex flex-col  w-full mt-20 pl-72 gap-20 p-20">
-      <div className="flex w-full  relative justify-between  items-center pr-40">
-        <div className="flex   w-1/2 absolute right-[12%] -top-[50%]   h-[700px] rounded-3xl ">
+    <div className="flex flex-col w-full mt-20 px-20  p-20 ">
+      <div className="flex w-full relative bg-[#d2c2b3]   justify-around pt-40 -mt-[14%] overflow-hidden rounded-[50px]  shadow-2xl"> 
+        <div className="flex   w-1/2 absolute right-[12%] -top-[20%]   h-[700px] rounded-3xl ">
           <img
             src={aboutDecoration1}
             alt="book image"
             className="object-cover  rounded-3xl"
           />
         </div>
-        <div className="flex   w-1/2 absolute z-20 left-[6%] -bottom-[20%]   h-[300px] rounded-3xl ">
+        <div className="flex    absolute z-20 left-[20%] bottom-[2%]   h-[200px] rounded-3xl ">
           <img
             src={aboutDecoration2}
             alt="book image"
-            className="object-cover  rounded-3xl"
+            className="object-cover w-[200px] rounded-3xl"
           />
         </div>
-        <div className="flex   w-1/2 absolute  -left-[6%] -bottom-[20%]   h-[350px] rounded-3xl ">
+        <div className="flex    absolute  left-[4%] -bottom-[2%]  rounded-3xl ">
           <img
             src={aboutDecoration3}
             alt="book image"
-            className="object-cover  rounded-3xl"
+            className="object-cover h-[200px] w-[350px]  rounded-3xl"
           />
         </div>
-        <div className="flex    absolute   right-[8%] top-[22%]   h-[400px] rounded-3xl ">
+        <div className="flex   absolute   right-[8%] top-[32%]   h-[400px] rounded-3xl ">
           <img
             src={aboutDecoration4}
             alt="book image"
@@ -40,12 +40,12 @@ const About: React.FC = () => {
         </div>
 
         <div className="flex flex-col z-10  overflow-hidden p-10  justify-center  rounded-tr-3xl rounded-tl-3xl    border-8 border-[#d6b39c] rounded-b-full h-full w-[600px] bg-[#e0d3c2] text-[#e2dbcc]">
-          <span className=" text-5xl text-[#9e8474] font-semibold ">
+          <span className=" text-6xl font-serif text-[#9e8474] font-semibold ">
             About Dr.Masha
           </span>
           <hr className="mt-2 text-[#9e8474]" />
 
-          <span className="text-lg font-semibold text-[#b09a8a] mt-4 p-4 mb-10   ">
+          <span className="text-lg  font-semibold text-[#b09a8a] mt-4 p-4 mb-10   ">
             With over 15 years of experience in cosmetic dermatol- ogy and
             anti-aging medicine, my academic and clini- cal journey spans the
             Middle East and Europe — with advanced education completed in UAE,
@@ -66,8 +66,8 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex w-full relative justify-between pr-20  mt-20">
-        <div className="flex    absolute   right-0 -top-[4%]   h-[400px] rounded-3xl ">
+      <div className="flex w-full relative justify-around  pr-20  mt-10">
+        <div className="flex    absolute   -right-[6%] -top-[8%]   h-[400px] rounded-3xl ">
           <img
             src={aboutDecoration5}
             alt="book image"
@@ -86,8 +86,8 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-1/2 items-center py-14">
-          <span className="text-5xl">My Philosophy!</span>
+        <div className="flex flex-col  text-[#9e8474] w-1/2 items-center py-14">
+          <span className="text-6xl font-bold font-serif">My Philosophy!</span>
           <hr className="w-1/2 mt-5" />
 
           <span className="text-xl mt-5">
