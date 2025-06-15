@@ -95,9 +95,9 @@ const Home: React.FC = () => {
               and written with the hope of reach- ing others who are ready to
               live from a deeper semiboldplace.
             </span>
-            <button className=" w-1/4 text-center rounded-4xl mt-2 bg-[#9E8474] p-2 text-[#e2dbcc]">
+            <Link className=" w-1/4 text-center rounded-4xl mt-2 bg-[#9E8474] p-2 text-[#e2dbcc]" to={"/about"}>
               Know More!
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col w-1/2"></div>
@@ -156,7 +156,9 @@ const Home: React.FC = () => {
       </div>
 
       <div className="flex w-full space-x-10 py-20 px-40 ">
-        <div className="flex relative w-1/5 h-[500px] rounded-3xl overflow-hidden">
+        <a
+        href=" https://www.thenewyou.ae/hair-restoration "
+        className="flex relative w-1/5 h-[500px] rounded-3xl overflow-hidden">
           <span className="absolute top-3 left-4 font-semibold text-white">
             Hair Restoration Treatments
           </span>
@@ -165,8 +167,9 @@ const Home: React.FC = () => {
             alt="Yoga pose"
             className="object-cover w-full"
           />
-        </div>
-        <div className="flex relative w-1/5 h-[500px] rounded-3xl overflow-hidden">
+        </a>
+        <a
+         className="flex relative w-1/5 h-[500px] rounded-3xl overflow-hidden">
           <span className="absolute top-3 left-4 font-semibold text-white">
             Pigmentation Control
           </span>
@@ -176,9 +179,11 @@ const Home: React.FC = () => {
             alt="Yoga pose"
             className="object-cover w-full"
           />
-        </div>
+        </a>
         <div className="flex flex-col gap-2 w-1/2 ">
-          <div className="flex relative h-[250px] rounded-3xl overflow-hidden">
+          <a
+          
+          className="flex relative h-[250px] rounded-3xl overflow-hidden">
             <span className="absolute top-3 left-4 font-semibold text-white">
               Medical-Grade Chemical Peels
             </span>
@@ -188,9 +193,11 @@ const Home: React.FC = () => {
               alt="Yoga pose"
               className="object-cover w-full"
             />
-          </div>
+          </a>
           <div className="flex w-full space-x-4  justify-between">
-            <div className="flex relative w-full h-[250px] rounded-3xl overflow-hidden">
+            <a
+            href="https://www.thenewyou.ae/hand-rejuvenation "
+            className="flex relative w-full h-[250px] rounded-3xl overflow-hidden">
               <span className="absolute top-3 left-4 font-semibold text-white">
                 Hand Rejuinvation
               </span>
@@ -200,8 +207,10 @@ const Home: React.FC = () => {
                 alt="Yoga pose"
                 className="object-cover w-full"
               />
-            </div>
-            <div className="flex w-full relative h-[250px] rounded-3xl overflow-hidden">
+            </a>
+            <a
+            href="https://www.thenewyou.ae/micro-needling "
+            className="flex w-full relative h-[250px] rounded-3xl overflow-hidden">
               <span className="absolute top-3 left-4 font-semibold text-white">
                 Micro Needling
               </span>
@@ -211,7 +220,7 @@ const Home: React.FC = () => {
                 alt="Yoga pose"
                 className="object-cover w-full"
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -262,7 +271,7 @@ const Home: React.FC = () => {
             </span>
             <Link
               to={"/wellness"}
-              className="rounded-2xl self-end p-4 text-[#9e8474] text-base cursor-pointer font-semibold bg-[#d9bf9e]"
+              className="rounded-2xl z-10 text-xl self-end p-4 text-[#9e8474]  cursor-pointer font-semibold bg-[#d9bf9e]"
             >
               More Services
             </Link>

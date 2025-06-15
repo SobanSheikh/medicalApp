@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import wellnessImage1 from "../assets/wellness_1.png";
 import wellnessImage2 from "../assets/wellness_2.png";
-import wellnessImage3 from "../assets/home_yoga_1.png";
 import wellnessGalleryImage1 from "../assets/wellness_gallery_1.png";
 import wellnessGalleryImage2 from "../assets/wellness_gallery_2.png";
 import wellnessGalleryImage3 from "../assets/wellness_gallery_3.png";
@@ -12,7 +11,7 @@ import wellnessSection2Image3 from "../assets/wellness_section2-3.png";
 import wellnessSection2Image4 from "../assets/wellness_section2-4.png";
 import wellnessBackgroundImage from "../assets/wellness_background.png";
 import wellnessSection3BackgroundImage from "../assets/wellness_section3_background.png";
-import wellnessSection4BackgroundImaage from "../assets/wellness_section4_background.png"
+import wellnessSection4BackgroundImaage from "../assets/wellness_section4_background.png";
 
 const Wellness = () => {
   useEffect(() => {
@@ -79,12 +78,12 @@ const Wellness = () => {
             </span>
           </div>
 
-          <button
-            onClick={() => {}}
+          <a
+            href="https://www.thenewyou.ae/botox"
             className="flex p-2 mt-2 px-3 bg-[#e2dbcc] font-semibold  border text-[#9e8474] border-white rounded-4xl"
           >
             Read More!
-          </button>
+          </a>
         </div>
 
         <div className="flex flex-col justify-around items-center">
@@ -106,12 +105,12 @@ const Wellness = () => {
               around your eyes, mouth nose, face and hands.
             </span>
           </div>
-          <button
-            onClick={() => {}}
+          <a
+            href="https://www.thenewyou.ae/dermal-fillers "
             className="flex p-2 mt-2 px-3 bg-[#e2dbcc] font-semibold  border text-[#9e8474] border-white rounded-4xl"
           >
             Read More!
-          </button>
+          </a>
         </div>
 
         <div className="flex flex-col justify-around items-center ">
@@ -132,12 +131,12 @@ const Wellness = () => {
               hyaluronic acid on the market
             </span>
           </div>
-          <button
-            onClick={() => {}}
+          <a
+            href="https://www.thenewyou.ae/profhilo-skin-booster "
             className="flex p-2 mt-2 px-3 bg-[#e2dbcc] font-semibold  border text-[#9e8474] border-white rounded-4xl"
           >
             Read More!
-          </button>
+          </a>
         </div>
 
         <div className="flex flex-col justify-around items-center">
@@ -149,7 +148,9 @@ const Wellness = () => {
             />
           </div>
           <div className="flex text-white flex-col gap-1">
-            <span className="text-2xl whitespace-nowrap">PLATELET RICH PLASMA</span>
+            <span className="text-2xl whitespace-nowrap">
+              PLATELET RICH PLASMA
+            </span>
             <hr />
             <span className="text-base">
               PRP (Platelet Rich Plasma) treatment is a revolutionary skincare
@@ -157,154 +158,173 @@ const Wellness = () => {
               growth and give your skin a rejuvenated and healthy appearance.
             </span>
           </div>
-          <button
-            onClick={() => {}}
+          <a
+            href="https://www.thenewyou.ae/platelet-rich-plasma "
             className="flex p-2 mt-2 px-3 bg-[#e2dbcc] font-semibold  border text-[#9e8474] border-white rounded-4xl"
           >
             Read More!
-          </button>
+          </a>
         </div>
       </div>
       <div className="flex relative flex-col bg-[#c8b7a6] pt-6 -mt-[4%] -mx-[4.5%]">
-      <div className="flex  absolute ">
-              <img
-                src={wellnessSection3BackgroundImage}
-                alt="book image"
-                className="object-cover w-2/3 "
-              />
-            </div>
-
-      <div className="flex w-full  z-10 p-10 items-center  flex-col gap-10  ">
-        <div className=" flex p-4 font-serif font-semibold bg-[#cb9992] text-4xl border-2 border-white text-white  rounded-4xl self-center">
-          More Services
-        </div>
-        <div className="flex w-3/4 flex-col gap-3 px-20">
-          {/* repeated components */}
-
-          <div className="flex justify-between gap-20  ">
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">1</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Skin Rejuvenation & Anti-Aging</span>
-            </div>
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">5</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Medical-Grade Chemical Peels</span>
-            </div>
-          </div>
-
-          <div className="flex justify-between gap-20  ">
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">2</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Measotherapy</span>
-            </div>
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">6</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Pigmentation Control</span>
-            </div>
-          </div>
-
-          <div className="flex justify-between gap-20  ">
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">3</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Hair Restoration Treatments</span>
-            </div>
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">7</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Holistic Skin Health Optimization</span>
-            </div>
-          </div>
-
-          <div className="flex justify-between gap-20  ">
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">4</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Collagen Induction</span>
-            </div>
-            <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
-              <div className=" p-2 bg-[#cb9992] w-10 rounded-full">8</div>
-              <span className="text-xl text-[#9e8474] font-semibold">Regenerative Aesthetic CareAging</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex w-full  p-10 items-center z-10  relative flex-col gap-10  ">
-      <div className="flex  absolute w-full inset-0 -z-10 top-[10%] h-[600px]   ">
-              <img
-                src={wellnessSection4BackgroundImaage}
-                alt="book image"
-                className="object-fill w-full opacity-35"
-              />
-            </div>
-        <div className=" flex p-4 text-4xl text-white font-semibold font-serif border border-white rounded-4xl self-center">
-          Yoga and Wellness
+        <div className="flex  absolute ">
+          <img
+            src={wellnessSection3BackgroundImage}
+            alt="book image"
+            className="object-cover w-2/3 "
+          />
         </div>
 
-        <div className="flex flex-col text-white text-lg font-semibold w-3/4">
-          <span>
-            Beyond the clinical side of my work is someone who understands that
-            wellness is not a luxury — it’s a necessity. The way we move,
-            breathe, eat, and restore ourselves matters. My path into yoga and
-            holistic wellbeing didn’t replace medicine — it deepened it. It
-            offered what protocols alone could not: a more personal, lived
-            connection with the body and its needs
-          </span>
-          <span>
-            ’m a certified RYT300 yoga teacher, though I don’t lead classes.
-            Instead, I integrate the principles into how I live, heal, and
-            support others.
-          </span>
-          <span>
-            My wellness approach is rooted in rhythm, simplicity, and daily
-            choices that honor the body, mind, and soul. I’ve seen firsthand how
-            yoga, stretching, and plant-based living affect not only the skin
-            and hormones, but also our energy, sleep, and emotional wellbeing
-          </span>
+        <div className="flex w-full  z-10 p-10 items-center  flex-col gap-10  ">
+          <a
+          href="https://www.thenewyou.ae/procedures "
+          className=" flex p-4 font-serif font-semibold bg-[#cb9992] text-4xl border-2 border-white text-white  rounded-4xl self-center">
 
-          <span>
-            This way of living is the foundation of my second book — a deeper,
-            personal exploration of Wellness & Yoga as daily tools for balance,
-            healing, and sustainable self-care.
-          </span>
+            More Services
+          </a>
+          <div className="flex w-3/4 flex-col gap-3 px-20">
+            {/* repeated components */}
+
+            <div className="flex justify-between gap-20  ">
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">1</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Skin Rejuvenation & Anti-Aging
+                </span>
+              </div>
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">5</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Medical-Grade Chemical Peels
+                </span>
+              </div>
+            </div>
+
+            <div className="flex justify-between gap-20  ">
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">2</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Measotherapy
+                </span>
+              </div>
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">6</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Pigmentation Control
+                </span>
+              </div>
+            </div>
+
+            <div className="flex justify-between gap-20  ">
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">3</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Hair Restoration Treatments
+                </span>
+              </div>
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">7</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Holistic Skin Health Optimization
+                </span>
+              </div>
+            </div>
+
+            <div className="flex justify-between gap-20  ">
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">4</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Collagen Induction
+                </span>
+              </div>
+              <div className="flex w-full rounded-3xl p-2 px-4 items-center gap-6 bg-[#d6ad96] ">
+                <div className=" p-2 bg-[#cb9992] w-10 rounded-full">8</div>
+                <span className="text-xl text-[#9e8474] font-semibold">
+                  Regenerative Aesthetic CareAging
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="flex w-full z-10 p-10 items-center flex-col   gap-10  ">
-        <div className="flex w-full gap-10  justify-center items-center">
-          
-          <div className="flex rounded-2xl h-[550px] w-[350px] overflow-hidden">
+        <div className="flex w-full  p-10 items-center z-10  relative flex-col gap-10  ">
+          <div className="flex  absolute w-full inset-0 -z-10 top-[10%] h-[600px]   ">
             <img
-              src={wellnessGalleryImage1}
+              src={wellnessSection4BackgroundImaage}
               alt="book image"
-              className="object-cover w-full h-full"
+              className="object-fill w-full opacity-35"
             />
           </div>
+          <div className=" flex p-4 text-4xl text-white font-semibold font-serif border border-white rounded-4xl self-center">
+            Yoga and Wellness
+          </div>
 
-          <div className="flex flex-col gap-4">
-            <div className="flex rounded-2xl h-[270px] w-[600px] overflow-hidden">
+          <div className="flex flex-col text-white text-lg font-semibold w-3/4">
+            <span>
+              Beyond the clinical side of my work is someone who understands
+              that wellness is not a luxury — it’s a necessity. The way we move,
+              breathe, eat, and restore ourselves matters. My path into yoga and
+              holistic wellbeing didn’t replace medicine — it deepened it. It
+              offered what protocols alone could not: a more personal, lived
+              connection with the body and its needs
+            </span>
+            <span>
+              ’m a certified RYT300 yoga teacher, though I don’t lead classes.
+              Instead, I integrate the principles into how I live, heal, and
+              support others.
+            </span>
+            <span>
+              My wellness approach is rooted in rhythm, simplicity, and daily
+              choices that honor the body, mind, and soul. I’ve seen firsthand
+              how yoga, stretching, and plant-based living affect not only the
+              skin and hormones, but also our energy, sleep, and emotional
+              wellbeing
+            </span>
+
+            <span>
+              This way of living is the foundation of my second book — a deeper,
+              personal exploration of Wellness & Yoga as daily tools for
+              balance, healing, and sustainable self-care.
+            </span>
+          </div>
+        </div>
+        <div className="flex w-full z-10 p-10 items-center flex-col   gap-10  ">
+          <div className="flex w-full gap-10  justify-center items-center">
+            <div className="flex rounded-2xl h-[550px] w-[350px] overflow-hidden">
               <img
-                src={wellnessGalleryImage2}
+                src={wellnessGalleryImage1}
                 alt="book image"
                 className="object-cover w-full h-full"
               />
             </div>
 
-            <div className="flex justify-between gap-4">
-              <div className="flex rounded-2xl h-[260px] w-[290px] overflow-hidden">
+            <div className="flex flex-col gap-4">
+              <div className="flex rounded-2xl h-[270px] w-[600px] overflow-hidden">
                 <img
-                  src={wellnessGalleryImage3}
+                  src={wellnessGalleryImage2}
                   alt="book image"
                   className="object-cover w-full h-full"
                 />
               </div>
-              <div className="flex rounded-2xl h-[260px] w-[290px] overflow-hidden">
-                <img
-                  src={wellnessGalleryImage4}
-                  alt="book image"
-                  className="object-cover w-full h-full"
-                />
+
+              <div className="flex justify-between gap-4">
+                <div className="flex rounded-2xl h-[260px] w-[290px] overflow-hidden">
+                  <img
+                    src={wellnessGalleryImage3}
+                    alt="book image"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="flex rounded-2xl h-[260px] w-[290px] overflow-hidden">
+                  <img
+                    src={wellnessGalleryImage4}
+                    alt="book image"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );
