@@ -10,6 +10,7 @@ import wellnessImage from "../assets/home_wellness.png";
 import ReviewIcon from "../assets/review.svg";
 import { Link, useLocation } from "react-router-dom";
 import homeSection3Flower from "../assets/home_section_3_flower.png";
+import homeSection2RightBranch from "../assets/home_section_2_right_branch.png";
 import homeSection5BackGroundImage from "../assets/home_section_5_background.png"
 import homeBackground1 from "../assets/home_section_1_backround.png";
 import homeDecoration1 from "../assets/home_decoration_1.png";
@@ -101,9 +102,8 @@ const Home: React.FC = () => {
         </div>
         <div className="flex flex-col w-1/2"></div>
       </div>
-      <hr />
       <div className="flex w-full z-10 ">
-        <div className="flex w-1/3  relative p-8 pt-14 bg-gray-200">
+        <div className="flex w-1/3  relative p-8 pt-14 bg-[#d9d1c6]">
       
         <div className="flex  absolute ml-12 top-[10%] h-[550px] mt-12  overflow-hidden      ">
             <img
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
           </div>
 
 
-          <div className="flex flex-col relative  p-10 ml-50 justify-center  -mr-[70%] z-10   border-8 border-white rounded-b-full h-full w-[500px] bg-amber-900 text-[#e2dbcc]">
+          <div className="flex flex-col relative  p-10 ml-50 justify-center  -mr-[70%] z-10   border-8 border-white rounded-b-full h-full w-[500px] bg-[#d9bf9e] text-white">
             
           <div className="flex  absolute ml-4 -top-[32%] -left-[18%] h-[300px] mt-12  overflow-hidden      ">
             <img
@@ -140,12 +140,19 @@ const Home: React.FC = () => {
             </span>
           </div>
         </div>
-        <div className="flex w-4/5  bg-amber-700">
-        <div className="flex ml-[20%] top-[10%]] h-[550px] mt-12  overflow-hidden      ">
+        <div className="flex w-4/5 relative  bg-[#9e8474]">
+        <div className="flex ml-[20%]  h-[500px] mt-20 rounded-4xl shadow-2xl z-10 overflow-hidden   ">
             <img
               src={homeBookImage}
               alt="about image"
-              className="object-cover w-[800px] rounded-3xl"
+              className="object-cover w-[800px] shadow-2xl rounded-4xl"
+            />
+          </div>
+          <div className="flex   absolute top-[4%] left-[10%] h-[600px] mt-12  overflow-hidden      ">
+            <img
+              src={homeSection2RightBranch}
+              alt="about image"
+              className="object-cover w-full rounded-3xl"
             />
           </div>
         </div>
@@ -153,8 +160,8 @@ const Home: React.FC = () => {
 
       <div className="flex w-full space-x-10 py-20 px-40 ">
         <div className="flex relative w-1/5 h-[500px] rounded-3xl overflow-hidden">
-          <span className="absolute top-3 left-4 font-semibold text-amber-900">
-            Yoga and Wellness
+          <span className="absolute top-3 left-4 font-semibold text-white">
+            Hair Restoration Treatments
           </span>
           <img
             src={yogaImage1}
@@ -164,7 +171,7 @@ const Home: React.FC = () => {
         </div>
         <div className="flex relative w-1/5 h-[500px] rounded-3xl overflow-hidden">
           <span className="absolute top-3 left-4 font-semibold text-white">
-            Yoga and Wellness
+            Pigmentation Control
           </span>
 
           <img
@@ -176,7 +183,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col gap-2 w-1/2 ">
           <div className="flex relative h-[250px] rounded-3xl overflow-hidden">
             <span className="absolute top-3 left-4 font-semibold text-white">
-              Yoga and Wellness
+              Medical-Grade Chemical Peels
             </span>
 
             <img
@@ -188,7 +195,7 @@ const Home: React.FC = () => {
           <div className="flex w-full space-x-4  justify-between">
             <div className="flex relative w-full h-[250px] rounded-3xl overflow-hidden">
               <span className="absolute top-3 left-4 font-semibold text-white">
-                Yoga and Wellness
+                Hand Rejuinvation
               </span>
 
               <img
@@ -198,8 +205,8 @@ const Home: React.FC = () => {
               />
             </div>
             <div className="flex w-full relative h-[250px] rounded-3xl overflow-hidden">
-              <span className="absolute top-3 left-4 font-semibold text-amber-900">
-                Yoga and Wellness
+              <span className="absolute top-3 left-4 font-semibold text-white">
+                Micro Needling
               </span>
 
               <img
@@ -240,7 +247,7 @@ const Home: React.FC = () => {
               className="object-cover w-[150%] rounded-3xl"
             />
           </div>
-            <span className=" flex text-5xl pb-4 font-semibold">
+            <span className=" flex text-5xl font-hugolers pb-4 font-semibold">
               Wellness & Yoga
             </span>
             <span className="flex text-2xl  text-end">
@@ -279,7 +286,7 @@ const Home: React.FC = () => {
 
 
         <div className="flex w-full gap-6">
-          <div className="flex flex-col relative items-center  h-[250px] w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
+          <div className="flex flex-col relative items-center  w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
             <span className="flex text-xl">UAE </span>
             <span className=" flex tex-lg"> Al Mansoori</span>
             <span className="text-xs text-justify">
@@ -296,7 +303,7 @@ const Home: React.FC = () => {
             />
           </div>
 
-          <div className="flex flex-col relative items-center  h-[250px] w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
+          <div className="flex flex-col relative items-center  w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
             <span className="flex text-xl">UAE </span>
             <span className=" flex tex-lg"> Al Mansoori</span>
             <span className="text-xs text-justify">
@@ -312,7 +319,7 @@ const Home: React.FC = () => {
               className="object-cover w-16 fill-white h-16 border-8 border-[#d5aa96] rounded-full -bottom-8 absolute text-amber-500"
             />
           </div>
-          <div className="flex flex-col relative items-center  h-[250px] w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
+          <div className="flex flex-col relative items-center  w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
             <span className="flex text-xl">UAE </span>
             <span className=" flex tex-lg"> Al Mansoori</span>
             <span className="text-xs text-justify">
@@ -328,7 +335,7 @@ const Home: React.FC = () => {
               className="object-cover w-16 fill-white h-16 border-8 border-[#d5aa96] rounded-full -bottom-8 absolute text-amber-500"
             />
           </div>
-          <div className="flex flex-col relative items-center  h-[250px] w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
+          <div className="flex flex-col relative items-center  w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
             <span className="flex text-xl">UAE </span>
             <span className=" flex tex-lg"> Al Mansoori</span>
             <span className="text-xs text-justify">
@@ -344,7 +351,7 @@ const Home: React.FC = () => {
               className="object-cover w-16 fill-white h-16 border-8 border-[#d5aa96] rounded-full -bottom-8 absolute text-amber-500"
             />
           </div>
-          <div className="flex flex-col relative items-center  h-[250px] w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
+          <div className="flex flex-col relative items-center   w-[300px] p-10 rounded-t-full bg-[#d5aa96] text-white ">
             <span className="flex text-xl">UAE </span>
             <span className=" flex tex-lg"> Al Mansoori</span>
             <span className="text-xs text-justify">
