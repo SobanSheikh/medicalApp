@@ -3,12 +3,12 @@ import emailjs from "@emailjs/browser";
 import Airplance from "../assets/airplane.svg";
 import { toast, Toaster } from "react-hot-toast";
 
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
-const SERVICE_ID = "service_neu7amm";
-const TEMPLATE_ID = "template_cojlq1h";
-const PUBLIC_KEY = "FjSjHCDP35yVEFBoc";
+const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
 const Contact: React.FC = () => {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -16,13 +16,13 @@ const Contact: React.FC = () => {
   const ContactForm: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     const formRef = useRef<HTMLFormElement | null>(null);
     const [isSending, setIsSending] = useState(false);
-  
+
     const handleSubmit = (e: React.FormEvent) => {
       e.preventDefault();
-  
+
       if (!formRef.current) return;
       setIsSending(true);
-  
+
       emailjs
         .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
           publicKey: PUBLIC_KEY,
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
           setIsSending(false);
         });
     };
-  
+
     return (
       // Note: The `absolute` positioning is kept from your original code.
       // For this example to render nicely, you might place it inside a `relative` parent container.
@@ -70,11 +70,14 @@ const Contact: React.FC = () => {
             </svg>
           </button>
         </div>
-  
+
         {/* --- Form --- */}
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="email" className="mb-2 block font-medium text-stone-600">
+            <label
+              htmlFor="email"
+              className="mb-2 block font-medium text-stone-600"
+            >
               Your Email
             </label>
             <input
@@ -86,9 +89,12 @@ const Contact: React.FC = () => {
               className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
             />
           </div>
-  
+
           <div>
-            <label htmlFor="title" className="mb-2 block font-medium text-stone-600">
+            <label
+              htmlFor="title"
+              className="mb-2 block font-medium text-stone-600"
+            >
               Title
             </label>
             <input
@@ -100,9 +106,12 @@ const Contact: React.FC = () => {
               className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
             />
           </div>
-  
+
           <div>
-            <label htmlFor="message" className="mb-2 block font-medium text-stone-600">
+            <label
+              htmlFor="message"
+              className="mb-2 block font-medium text-stone-600"
+            >
               Message
             </label>
             <textarea
@@ -114,13 +123,13 @@ const Contact: React.FC = () => {
               className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
             />
           </div>
-  
+
           <button
             type="submit"
             className={`w-full rounded-lg px-4 py-3 font-semibold text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 ${
               isSending
                 ? "cursor-not-allowed bg-stone-400"
-                : "bg-stone-700 hover:bg-stone-800"
+                : "bg-[#9e8474] hover:bg-stone-800"
             }`}
             disabled={isSending}
           >
@@ -154,17 +163,16 @@ const Contact: React.FC = () => {
             I believe in connection that matters — and I welcome yours
           </span>
 
-          <div className="flex mt-6 p-2 justify-between relative font-semibold border rounded-4xl border-red-950">
-            <input
-              type="text"
-              placeholder="Email Us"
-              className="text-sm rounded-4xl placeholder:text-white outline-none"
-            />
+          <div
+            onClick={() => setShowContactForm(!showContactForm)}
+            className="flex cursor-pointer mt-6 p-2 justify-between gap-2 relative font-semibold"
+            
+          >
+            <span className="text-xl underline font-serif"> Message Us</span>
             <img
               src={Airplance}
               alt="Airplane"
-              onClick={() => setShowContactForm(!showContactForm)}
-              className="object-cover flex bg-white px-2 py-1 rounded-xl h-6 cursor-pointer"
+              className="object-cover flex bg-white px-2 py-1 mt-0.5 rounded-xl h-6 cursor-pointer"
             />
 
             {showContactForm && (
@@ -204,6 +212,19 @@ const Contact: React.FC = () => {
               </a>
               <span className="text-xs text-white -ml-8">+971504981877</span>
             </div>
+            <div className="flex flex-col gap-1">
+
+            <a
+              href="mailto:info@drmashalekic.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-amber-200"
+            >
+              <FaEnvelope size={24} />
+            </a>
+            <span className="text-xs text-white -ml-8">info@drmashalekic.com</span>
+
+</div>
           </div>
         </div>
       </div>

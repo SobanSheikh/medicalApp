@@ -169,6 +169,7 @@ const Home: React.FC = () => {
           />
         </a>
         <a
+        href="https://www.thenewyou.ae/procedures "
          className="flex relative w-1/5 h-[500px] rounded-3xl overflow-hidden">
           <span className="absolute top-3 left-4 font-semibold text-white">
             Pigmentation Control
@@ -182,6 +183,7 @@ const Home: React.FC = () => {
         </a>
         <div className="flex flex-col gap-2 w-1/2 ">
           <a
+          href="https://www.thenewyou.ae/procedures "
           
           className="flex relative h-[250px] rounded-3xl overflow-hidden">
             <span className="absolute top-3 left-4 font-semibold text-white">
