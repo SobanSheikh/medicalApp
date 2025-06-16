@@ -93,7 +93,7 @@ const Book: React.FC = () => {
             to stand back up, again and again.
           </span>
           <span className="text-xl font-semibold text-[#9e8474]">
-            t’s a story of what happens when a woman chooses to step out of her
+            It’s a story of what happens when a woman chooses to step out of her
             survival mode and into her own life — not to prove herself but to
             finally live in alignment with who she truly is. Within these pages,
             I share my most honest reflec- tions — not as advice but as

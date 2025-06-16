@@ -163,13 +163,16 @@ const Contact: React.FC = () => {
             I believe in connection that matters — and I welcome yours
           </span>
 
-          <div
-            onClick={() => setShowContactForm(!showContactForm)}
-            className="flex cursor-pointer mt-6 p-2 justify-between gap-2 relative font-semibold"
-            
-          >
-            <span className="text-xl underline font-serif"> Message Us</span>
+          <div className="flex cursor-pointer mt-6 p-2 justify-between gap-2 relative font-semibold">
+            <span
+              onClick={() => setShowContactForm(!showContactForm)}
+              className="text-xl underline font-serif"
+            >
+              {" "}
+              Message Us
+            </span>
             <img
+              onClick={() => setShowContactForm(!showContactForm)}
               src={Airplance}
               alt="Airplane"
               className="object-cover flex bg-white px-2 py-1 mt-0.5 rounded-xl h-6 cursor-pointer"
@@ -213,18 +216,18 @@ const Contact: React.FC = () => {
               <span className="text-xs text-white -ml-8">+971504981877</span>
             </div>
             <div className="flex flex-col gap-1">
-
-            <a
-              href="mailto:info@drmashalekic.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-amber-200"
-            >
-              <FaEnvelope size={24} />
-            </a>
-            <span className="text-xs text-white -ml-8">info@drmashalekic.com</span>
-
-</div>
+              <a
+                href="mailto:info@drmashalekic.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-amber-200"
+              >
+                <FaEnvelope size={24} />
+              </a>
+              <span className="text-xs text-white -ml-8">
+                info@drmashalekic.com
+              </span>
+            </div>
           </div>
         </div>
       </div>
