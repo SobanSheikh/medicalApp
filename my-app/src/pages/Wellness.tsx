@@ -22,7 +22,7 @@ const Wellness = () => {
   return (
     <div className="flex flex-col w-full mt-20    px-20 pt-20  relative">
       <div className="flex w-full gap-14   justify-center">
-        <div className="flex flex-col text-[#9e8474] font-serif  relative mt-20 w-1/2">
+        <div className="flex flex-col text-[#9e8474] font-caltoria tracking-wider  relative mt-20 w-1/2">
           <div className="flex rounded-full left-[30%]  -top-[40%] absolute h-[600px] w-[600px]  ">
             <img
               src={wellnessImage2}

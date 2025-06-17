@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
     return (
       // Note: The `absolute` positioning is kept from your original code.
       // For this example to render nicely, you might place it inside a `relative` parent container.
-      <div className="absolute flex w-[500px] flex-col rounded-2xl border border-stone-200 bg-white p-8 shadow-lg left-[80%] bottom-[120%]">
+      <div className="absolute flex w-[500px]  flex-col rounded-2xl border border-stone-200 bg-white p-8 shadow-lg left-[80%] bottom-[120%]">
         {/* --- Form Header --- */}
         <div className="mb-6 flex items-center justify-between">
           <h2 className="text-2xl font-semibold text-stone-800">
@@ -144,22 +144,23 @@ const Contact: React.FC = () => {
     <>
       <Toaster position="top-center" />
 
-      <div className="flex py-10 px-12 mx-10 mb-4 rounded-3xl shadow-xl text-white bg-[#9e8474]">
+      <div className="flex py-10 px-12 mx-10 mb-4 mt-4 rounded-3xl shadow-xl text-white bg-[#9e8474]">
         <div className="flex flex-col w-full items-center">
-          <span className="flex text-4xl underline font-serif">
+          <span className="flex text-4xl font-caltoria  font-serif">
             {" "}
             Contact Us
           </span>
+          <hr  className="text-white w-1/12 -mt-1"/>
 
-          <span className="flex text-base mt-2">
+          <span className="flex font-poppins text-base mt-2">
             The power of connection begins here.
           </span>
-          <span className="flex text-base">
+          <span className="flex font-poppins  text-base">
             Whether you’re reaching out to collaborate, inquire about the
             treatments, or book, this space is open to real conversations and
             meaningful exchanges.
           </span>
-          <span className="text-base">
+          <span className="text-base font-poppins ">
             I believe in connection that matters — and I welcome yours
           </span>
 

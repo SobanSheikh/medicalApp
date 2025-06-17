@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Contact from '../pages/Contact';
 
 
 
@@ -31,7 +32,10 @@ const Layout = () => {
       <div className="flex-grow w-full">
         <Outlet />
       </div>
-      <Footer />
+      <div id="contact">
+        <Contact />
+      </div>
+      {/* <Footer /> */}
     </div>
   );
 };

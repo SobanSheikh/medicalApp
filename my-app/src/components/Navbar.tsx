@@ -8,11 +8,7 @@ const Navbar = () => {
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
     
-    // If not on home page, navigate to home page first
-    if (currentPath !== '/') {
-      window.location.href = '/#contact';
-      return;
-    }
+ 
     
     // If already on home page, just scroll to the contact section
     const contactSection = document.getElementById('contact');
@@ -29,8 +25,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav id='nav' className="bg-[#d9bf9e] rounded-4xl border-[#9e8474] border w-3/4 z-50 shadow-2xl self-center flex justify-center p-3">
-      <ul className="flex justify-between font-semibold text-amber-800 w-3/4">
+    <nav id='nav' className="bg-[#d9bf9e] font-poppiins rounded-4xl border-[#9e8474] border w-3/4 z-50 shadow-2xl self-center flex justify-center p-3">
+      <ul className="flex justify-between font-semibold text-[#926b52] w-3/4">
         <li>
           <Link 
             to="/" 
