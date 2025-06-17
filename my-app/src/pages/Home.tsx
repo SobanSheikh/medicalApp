@@ -81,7 +81,7 @@ const Home: React.FC = () => {
       <div className="flex w-full z-10 pb-10">
         <div className="flex flex-col w-1/2">
           <div className="flex flex-col justify-start ml-20 text-justify p-16">
-            <span className="font-serif font-bold mt-8 text-start text-7xl  tracking-wide  text-[#9e8474]">
+            <span className="font-caltoria font-bold mt-8 text-start text-7xl  tracking-wide  text-[#9e8474]">
               Dr. Masha Lekic
             </span>
             <div className=" flex border w-3/4  border-[#9E8474] self-start" />

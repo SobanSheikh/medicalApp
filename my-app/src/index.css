@@ -1,4 +1,18 @@
+@import "./fonts.css";
 @import "tailwindcss";
+
+:root {
+  --font-caltoria: 'Caltoria', serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+.font-caltoria {
+  font-family: var(--font-caltoria) !important;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins) !important;
+}
 
 html, body {
   height: 100%;
