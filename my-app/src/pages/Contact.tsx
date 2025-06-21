@@ -164,7 +164,7 @@ const Contact: React.FC = () => {
             I believe in connection that matters — and I welcome yours
           </span>
 
-          <div className="flex cursor-pointer mt-6 p-2 justify-between gap-2 relative font-semibold">
+          {/* <div className="flex cursor-pointer mt-6 p-2 justify-between gap-2 relative font-semibold">
             <span
               onClick={() => setShowContactForm(!showContactForm)}
               className="text-xl underline font-serif"
@@ -182,13 +182,13 @@ const Contact: React.FC = () => {
             {showContactForm && (
               <ContactForm onClose={() => setShowContactForm(false)} />
             )}
-          </div>
+          </div> */}
 
-          <span className="text-lg font-semibold mt-2"> Contact Now!</span>
+          <span className="text-lg font-semibold mt-3 underline"> Contact the Website Developer!</span>
 
           <div className="flex mt-10 gap-24">
             <a
-              href="https://www.instagram.com/dr.mashalekic?igsh=MTMwamRzOW1lbzJyMQ=="
+              href="https://www.instagram.com/soban_oo7/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-amber-200"
@@ -197,7 +197,7 @@ const Contact: React.FC = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/dr-masha-lekic/"
+              href="https://www.linkedin.com/in/sheikh-soban/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-amber-200"
@@ -205,7 +205,7 @@ const Contact: React.FC = () => {
               <FaLinkedin size={24} />
             </a>
 
-            <div className="flex flex-col gap-1">
+            {/* <div className="flex flex-col gap-1">
               <a
                 href="https://wa.me/971504981877"
                 target="_blank"
@@ -214,19 +214,19 @@ const Contact: React.FC = () => {
               >
                 <FaWhatsapp size={24} />
               </a>
-              <span className="text-xs text-white -ml-8">+971504981877</span>
-            </div>
+              <span className="text-xs text-white -ml-8">+97777 888 888</span>
+            </div> */}
             <div className="flex flex-col gap-1">
               <a
-                href="mailto:info@drmashalekic.com"
+                href="mailto:sheikhsoban4@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-amber-200"
               >
                 <FaEnvelope size={24} />
               </a>
-              <span className="text-xs text-white -ml-8">
-                info@drmashalekic.com
+              <span className="text-xs text-white -ml-13">
+              sheikhsoban4@gmail.com
               </span>
             </div>
           </div>

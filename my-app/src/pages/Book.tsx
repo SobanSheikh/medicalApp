@@ -76,7 +76,7 @@ const Book: React.FC = () => {
         </div>
         <div className="flex flex-col w-full  bg-[#eecdbb] p-8 gap-8 items-center border-[8px] border-white rounded-[80px]">
           <div className="flex flex-col w-1/2 gap-[8px] bg-[#cb9992] text-white p-5 rounded-[80px]">
-            <span className="text-5xl font-serif font-semibold whitespace-nowrap">She is me Now!</span>
+            <span className="text-5xl font-serif font-semibold">She is me Now!</span>
             <hr className="font-bold" />
             <span className="text-xl">A Journey Back to Yourself</span>
           </div>

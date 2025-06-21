@@ -76,7 +76,7 @@ const About: React.FC = () => {
       </div>
 
       <div className="flex w-full relative justify-around  pr-20  mt-10">
-        <div className="flex    absolute   -right-[6%] -top-[8%]   h-[400px] rounded-3xl ">
+        <div className="flex    absolute   -right-[4.25%] -top-[8%]   h-[400px] rounded-3xl ">
           <img
             src={aboutDecoration5}
             alt="book image"
