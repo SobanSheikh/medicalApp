@@ -6,11 +6,20 @@ import aboutDecoration2 from "../assets/about_decoration_2.png";
 import aboutDecoration3 from "../assets/about_decoration_3.png";
 import aboutDecoration4 from "../assets/about_decoration_4.png";
 import aboutDecoration5 from "../assets/about_decoration_5.png";
+import aboutBackgroundSeciton1 from "../assets/about_section_1_background.png";
 const About: React.FC = () => {
   return (
     <div className="flex flex-col w-full mt-20 px-20  p-20 ">
-      <div className="flex w-full relative bg-[#d2c2b3]   justify-around pt-40 -mt-[14%] overflow-hidden rounded-[50px]  shadow-2xl"> 
-        <div className="flex   w-1/2 absolute right-[12%] -top-[20%]   h-[700px] rounded-3xl ">
+      <div className="flex w-full relative     justify-around pt-40 -mt-[14%] overflow-hidden rounded-[50px]  shadow-2xl"> 
+      <div className="absolute z-10 inset-0 w-full h-full">
+        <img
+          src={aboutBackgroundSeciton1}
+          alt="book image"
+          className="object-fill w-full h-full rounded-3x scale-x-[-1]"
+        />
+        <div className="absolute inset-0 bg-[#d2c2b3] opacity-90"></div>
+      </div>
+        <div className="flex   w-1/2 absolute right-[12%] -top-[20%] z-10   h-[700px] rounded-3xl ">
           <img
             src={aboutDecoration1}
             alt="book image"
@@ -24,14 +33,14 @@ const About: React.FC = () => {
             className="object-cover w-[200px] rounded-3xl"
           />
         </div>
-        <div className="flex    absolute  left-[4%] -bottom-[2%]  rounded-3xl ">
+        <div className="flex    absolute z-10 left-[4%] -bottom-[2%]  rounded-3xl ">
           <img
             src={aboutDecoration3}
             alt="book image"
             className="object-cover h-[200px] w-[350px]  rounded-3xl"
           />
         </div>
-        <div className="flex   absolute   right-[8%] top-[32%]   h-[400px] rounded-3xl ">
+        <div className="flex   absolute  z-10 right-[8%] top-[32%]   h-[400px] rounded-3xl ">
           <img
             src={aboutDecoration4}
             alt="book image"
