@@ -1,144 +1,141 @@
-import React, { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
-import Airplance from "../assets/airplane.svg";
-import { toast, Toaster } from "react-hot-toast";
+import React from "react";
+import { Toaster } from "react-hot-toast";
 
-import { FaEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
-const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+// const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+// const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+// const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
 const Contact: React.FC = () => {
-  const [showContactForm, setShowContactForm] = useState(false);
 
-  const ContactForm: React.FC<{ onClose: () => void }> = ({ onClose }) => {
-    const formRef = useRef<HTMLFormElement | null>(null);
-    const [isSending, setIsSending] = useState(false);
+  // const ContactForm: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+  //   const formRef = useRef<HTMLFormElement | null>(null);
+  //   const [isSending, setIsSending] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
-      e.preventDefault();
+  //   const handleSubmit = (e: React.FormEvent) => {
+  //     e.preventDefault();
 
-      if (!formRef.current) return;
-      setIsSending(true);
+  //     if (!formRef.current) return;
+  //     setIsSending(true);
 
-      emailjs
-        .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
-          publicKey: PUBLIC_KEY,
-        })
-        .then(() => {
-          toast.success("Message sent successfully!");
-          formRef.current?.reset();
-          setIsSending(false);
-          onClose();
-        })
-        .catch((err) => {
-          console.error(err);
-          toast.error("Failed to send message. Please try again.");
-          setIsSending(false);
-        });
-    };
+  //     emailjs
+  //       .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
+  //         publicKey: PUBLIC_KEY,
+  //       })
+  //       .then(() => {
+  //         toast.success("Message sent successfully!");
+  //         formRef.current?.reset();
+  //         setIsSending(false);
+  //         onClose();
+  //       })
+  //       .catch((err) => {
+  //         console.error(err);
+  //         toast.error("Failed to send message. Please try again.");
+  //         setIsSending(false);
+  //       });
+  //   };
 
-    return (
-      // Note: The `absolute` positioning is kept from your original code.
-      // For this example to render nicely, you might place it inside a `relative` parent container.
-      <div className="absolute flex w-[500px]  flex-col rounded-2xl border border-stone-200 bg-white p-8 shadow-lg left-[80%] bottom-[120%]">
-        {/* --- Form Header --- */}
-        <div className="mb-6 flex items-center justify-between">
-          <h2 className="text-2xl font-semibold text-stone-800">
-            Send us a message
-          </h2>
-          <button
-            onClick={onClose}
-            className="rounded-full p-1 text-stone-400 transition-colors hover:bg-stone-100 hover:text-stone-600 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2"
-            aria-label="Close form"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
+  //   return (
+  //     // Note: The `absolute` positioning is kept from your original code.
+  //     // For this example to render nicely, you might place it inside a `relative` parent container.
+  //     <div className="absolute flex w-[500px]  flex-col rounded-2xl border border-stone-200 bg-white p-8 shadow-lg left-[80%] bottom-[120%]">
+  //       {/* --- Form Header --- */}
+  //       <div className="mb-6 flex items-center justify-between">
+  //         <h2 className="text-2xl font-semibold text-stone-800">
+  //           Send us a message
+  //         </h2>
+  //         <button
+  //           onClick={onClose}
+  //           className="rounded-full p-1 text-stone-400 transition-colors hover:bg-stone-100 hover:text-stone-600 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2"
+  //           aria-label="Close form"
+  //         >
+  //           <svg
+  //             xmlns="http://www.w3.org/2000/svg"
+  //             className="h-6 w-6"
+  //             fill="none"
+  //             viewBox="0 0 24 24"
+  //             stroke="currentColor"
+  //           >
+  //             <path
+  //               strokeLinecap="round"
+  //               strokeLinejoin="round"
+  //               strokeWidth={2}
+  //               d="M6 18L18 6M6 6l12 12"
+  //             />
+  //           </svg>
+  //         </button>
+  //       </div>
 
-        {/* --- Form --- */}
-        <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label
-              htmlFor="email"
-              className="mb-2 block font-medium text-stone-600"
-            >
-              Your Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              placeholder="you@example.com"
-              className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
-            />
-          </div>
+  //       {/* --- Form --- */}
+  //       <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+  //         <div>
+  //           <label
+  //             htmlFor="email"
+  //             className="mb-2 block font-medium text-stone-600"
+  //           >
+  //             Your Email
+  //           </label>
+  //           <input
+  //             id="email"
+  //             name="email"
+  //             type="email"
+  //             required
+  //             placeholder="you@example.com"
+  //             className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
+  //           />
+  //         </div>
 
-          <div>
-            <label
-              htmlFor="title"
-              className="mb-2 block font-medium text-stone-600"
-            >
-              Title
-            </label>
-            <input
-              id="title"
-              name="title"
-              type="text"
-              required
-              placeholder="What is this about?"
-              className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
-            />
-          </div>
+  //         <div>
+  //           <label
+  //             htmlFor="title"
+  //             className="mb-2 block font-medium text-stone-600"
+  //           >
+  //             Title
+  //           </label>
+  //           <input
+  //             id="title"
+  //             name="title"
+  //             type="text"
+  //             required
+  //             placeholder="What is this about?"
+  //             className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
+  //           />
+  //         </div>
 
-          <div>
-            <label
-              htmlFor="message"
-              className="mb-2 block font-medium text-stone-600"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={5}
-              required
-              placeholder="Write your message here..."
-              className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
-            />
-          </div>
+  //         <div>
+  //           <label
+  //             htmlFor="message"
+  //             className="mb-2 block font-medium text-stone-600"
+  //           >
+  //             Message
+  //           </label>
+  //           <textarea
+  //             id="message"
+  //             name="message"
+  //             rows={5}
+  //             required
+  //             placeholder="Write your message here..."
+  //             className="w-full rounded-lg border border-stone-300 bg-stone-50 px-4 py-2 text-stone-800 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-500/50"
+  //           />
+  //         </div>
 
-          <button
-            type="submit"
-            className={`w-full rounded-lg px-4 py-3 font-semibold text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 ${
-              isSending
-                ? "cursor-not-allowed bg-stone-400"
-                : "bg-[#9e8474] hover:bg-stone-800"
-            }`}
-            disabled={isSending}
-          >
-            {isSending ? "Sending..." : "Send Message"}
-          </button>
-        </form>
-      </div>
-    );
-  };
+  //         <button
+  //           type="submit"
+  //           className={`w-full rounded-lg px-4 py-3 font-semibold text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 ${
+  //             isSending
+  //               ? "cursor-not-allowed bg-stone-400"
+  //               : "bg-[#9e8474] hover:bg-stone-800"
+  //           }`}
+  //           disabled={isSending}
+  //         >
+  //           {isSending ? "Sending..." : "Send Message"}
+  //         </button>
+  //       </form>
+  //     </div>
+  //   );
+  // };
 
   return (
     <>
